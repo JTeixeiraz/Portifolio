@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio - J.Teixeira</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/pagina-inicial/responsivo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <header id="headergeral">
+        <ul class="name">
+            <li class="nome"><a href="#inicio" class="headerlinks">J.Teixeira</a></li>
+            <hr class="divisaorelogiio">
+            <div id="relogio">
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+             
+            </div>
+        </ul>
+        <div id="informacao">
+        <ul class="info">
+            <li class="sobre"><a href="#SobreMim" class="headerlinks">Sobre</a></li>
+            <li class="portifolio"><a href="#Portifolio" class="headerlinks">Portifolio</a></li>
+            <li class="contato"><a href="#contato" class="headerlinks" class="btoao"><button class="btnfalecomigo">Fale Comigo</button></a></li>
+            
+            
+            <a href="https://br.linkedin.com/in/jo%C3%A3o-pedro-teixeira-reis-a4b2642b3"><img src="/imagens/linkedin.png" alt="" class="linkedin"></a>
+            <a href="https://www.instagram.com/teixasz__/"><img src="/imagens/instagram-new.png" alt="" class="instagram"></a>
+            <hr class="divisaodark">
+            <div>
+                <button onclick="darkmode()" class="tema" id="check"><i class="bi bi-moon-fill" id="sol"></i></button>
+            </div>
+        </div>
+
+    </header>
+    <div id="conteudogeral">
+    <main id="inicio" class="particao">
+       <div class="conjunto">
+        <div class="jp">
+            Joao Pedro            
+        </div>
+        <div class="teixeira">
+            Teixeira
+        </div>
+       </div>
+        <div class="moldando">
+            Moldando o futuro da revolução tecnologica no Brasil.
+        </div>
+    </main>
+    <!--final da parte inicial do nome-->
+    <div id="linha">
+        <hr class="linhaa">
+    </div>
+    <div id="SobreMim" class="particao" data-aos="fade-right" data-aos-duration="1500">
+        <div class="cardbox">
+            <div class="cabecalhocardbox">
+                <h3 class="txtsobre">Sobre Mim</h3>
+            </div>
+            <div class="todoconteudocardbox">
+                <div id="cardtext">
+                    <div class="imagemjoao">
+                        <img src="/imagens/20240912_161829.jpg" alt="" class="joao">
+                    </div>
+            
+                    <p class="textosobre">Como estudante do Colégio Técnico Cotemig, estou buscando oportunidades para aplicar e
+                        expandir meu conhecimento em Tecnologia da Informação. Com mais de 10
+                        anos de estudo da língua inglesa, adquiri habilidades sólidas de comunicação e compreensão técnica. Possuo conhecimentos em diversas áreas-chave, incluindo desenvolvimento de software (C#,Python e conhecimento minimo em Java), design web (HTML/CSS/JavaScript), gerenciamento de dados (MySQL) e uso de
+                        ferramentas como o Pacote Office e Canva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="linha">
+        <hr class="linhaa">
+    </div>
+    <div id="Portifolio" class="particao" data-aos="fade-right" data-aos-duration="1500">
+        <div id="conteudoPortifolio">
+            <h3 class="projetos">Projetos</h3>
+            <div id="projetosdivs">
+                <div class="gridprojetos">
+                    <div class="projdiv">
+                        <img src="/imagens/Matricula_cotemig.png" alt="" class="matricula">
+                        <a href="https://github.com/JTeixeiraz">Reprodução Site Cotemig</a>
+                    </div>
+                    <div class="projdiv">
+                        <img src="/imagens/elit_photo.png" alt="" class="elit">
+                        <a href="https://lucky-raindrop-ac5984.netlify.app/">Reprodução Site Elit Photography</a>
+                    </div>
+                
+                
+                    <div class="projdiv">
+                        <img src="/imagens/tabela_periodica.png" alt="" class="tabela">
+                        <a href="https://github.com/JTeixeiraz">Tabela Periodica</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divbotao">
+            <button class="btnprjt"><a href="/projetos/projetos.html" class="linkproje">Saiba Mais*</a></button>
+        </div>
+    </div>
+        <hr class="linhaa">
+    <div id="contato" class="particao" data-aos="fade-right" data-aos-duration="1500">
+        <div class="margincontato">
+            <div class="contatotext">
+                <h3 class="titulocontato">Contato</h3>
+                <div class="infocontato">
+                    Email: joaopedroteixeirareis@gmail.com <br>
+                    Telefone: (31) 9 8770-5732 <br>
+                </div>
+            </div>
+            <div class="contato">
+                <form action="#" class="formulario">
+                    <div class="conteudoform">
+                        <div class="inputform">
+                            <label for="">Nome</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputform">
+                            <label for="">Sobrenome</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputform">
+                            <label for="">Email*</label>
+                            <input type="email" placeholder="xxxxxx@gmail.com">
+                        </div>
+                        <div class="inputform">
+                            <label for="">Telefone</label>
+                            <input type="tell" placeholder="+55 (xx)xxxx-xxxx" onblur="mascaraTell(this)" onfocus="tiraHifen(this)">
+                        </div>
+                    </div>
+                    <div id="textarea">
+                        <textarea name="mensagem" class="msg" placeholder="Deixe sua mensagem" id="telefonejs"></textarea>
+                    </div>
+                    <div id="botaosubmit">
+                        <input type="submit" id="botao">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="footer">
+<footer>
+    <div class="footercontent">
+        <div class="col_col1">
+            <h3>Portifolio</h3>
+            <p>Made <span style="color: #BA6573;"></span> by João Pedro Teixeira Reis</p>
+        </div>
+        <!--
+        <div class="botaoswitch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        -->
+        
+        <div class="col_col2" style="display: flex; flex-direction:row;">
+            
+            <div style="display: flex; flex-direction:column;">
+            <p>Email: joaopedroteixeirareis@gmail.com</p>
+            <p>Telefone: +55 31 98770-5732</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <!-- Rounded switch -->
+
+</footer>
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body> 
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+</html>

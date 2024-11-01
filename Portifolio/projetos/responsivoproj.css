@@ -1,0 +1,113 @@
+@media(max-width: 980px){
+    @font-face {
+        src: url(../fontes/Roboto-Regular.ttf);
+        font-family: 'roboto';
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        position: relative;
+        margin: 0;
+        color: white; /* Ajusta a cor do texto para garantir que ele seja legível */
+        /*A baixo, backgorund de cor V*/
+        
+        background-color: linear-gradient(43deg, #000000 0%, #3b313a 46%, #70ffde 100%);
+        background-image: linear-gradient(43deg, #000000 0%, #3b313a 46%, #70ffde 100%);
+  
+        width: 100%;
+        height: 1vh;
+    
+    
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    
+    #conteudogeral{
+        height: 100vh;
+        display: grid;
+     
+       
+    }
+    #headergeral{
+        width: 100%;
+        grid-template-columns: 1fr 3fr 3fr;
+        position: fixed;
+        display: grid;
+        /*
+        color: #FFFFFF;
+        background: rgba(24, 24, 24, 0.5);
+        */
+        backdrop-filter:blur(30px);
+        box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        height: 80px;
+        align-items: center;
+        font-family: 'roboto';
+    }
+    #tdproj{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        position: absolute;
+        top: 200px;
+        background: rgba(26, 37, 40, 0.1);
+    border-radius: 30px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transição adicionada */
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .card{
+        width: 100px;
+        height: 250px;
+        border-radius: 30px;
+        display: flex;
+        transition: transform 0.3s ease; 
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+        font-weight: bold;
+        line-height: 30px;
+        margin: 2px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .card:hover{
+        transform: scale(1.05); 
+        cursor: pointer;
+        backdrop-filter:blur(30px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    transition: 0.6s;
+    }
+    #tdproj:hover{
+        transform: scale(1.05); /* Efeito de zoom */
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5vh;
+        font-weight: bold;
+        line-height: 90px;
+    }
+    .linguagem{
+    width: 80px;
+    height: 80px;
+    }
+}
